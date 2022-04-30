@@ -7,7 +7,7 @@
 https://developer.nvidia.com/cuda-10.1-download-archive-base
 
 ```
-# To check the GPU and Cuda Cersion
+# To check the GPU and Cuda Version
 
 ```
 nvidia-smi
