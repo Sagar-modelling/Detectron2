@@ -1,7 +1,7 @@
 # Important points while doing installation of Detectron 2
 
 ```
-Whenver you are installing detectron2 you need to check the pytorch version and check if you are using CPU/GPU(What is your CUDA version?)
+*Whenver you are installing detectron2 you need to check the pytorch version and check if you are using CPU/GPU(What is your CUDA version?)
 ```
 # To check the GPU and Cuda Cersion
 
