@@ -30,8 +30,22 @@ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
 Add permisions
 sudo chmod a+r /usr/local/cuda/include/cudnn.h
 sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+```
+
+# Install cmake-gui
+```
+Ubuntu 18: Download and compile CMake-gui from source. The default CMake-gui version (3.10) installed via sudo apt-get install cmake-qt-gui provokes some compiling errors. Required CMake version >= 3.12.
+Uninstall your current Cmake-gui version by running sudo apt purge cmake-qt-gui.
+Install OpenSSL for building CMake by running sudo apt install libssl-dev.
+Run sudo apt-get install qtbase5-dev.
+Download the Latest Release of CMake Unix/Linux Source from the CMake download website, called cmake-X.X.X.tar.gz.
+Unzip it and go inside that folder from the terminal.
+Run ./configure --qt-gui. Make sure no error occurred.
+Run ./bootstrap && make -j`nproc` && sudo make install -j`nproc`. Make sure no error occurred.
+Assuming your CMake downloaded folder is in {CMAKE_FOLDER_PATH}, every time these instructions mentions cmake-gui, you will have to replace that line by {CMAKE_FOLDER_PATH}/bin/cmake-gui
 
 ```
+
 # To check the GPU and Cuda Version
 
 ```
